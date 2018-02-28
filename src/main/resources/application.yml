@@ -1,0 +1,28 @@
+kafka:
+  topic: helloworld.t
+  group-id: helloworld.t
+
+  bootstrap-servers: localhost:9092
+  security-protocol:
+  ssl:
+    truststore:
+      location:
+      password:
+    keystore:
+      location:
+      password:
+    keypassword:
+
+dcos:
+  entrypoint:
+
+management:
+  security:
+    enabled: false
+
+monitoring:
+  endpoint:
+    enabled: true
+    path: prometheus
+
+spring.application.name: MsKafka

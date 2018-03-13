@@ -1,5 +1,6 @@
 package com.stratio.controller;
 
+import com.google.gson.Gson;
 import com.stratio.dto.Product;
 import com.stratio.service.kafka.KafkaService;
 import com.stratio.service.security.BaasSecurityService;
@@ -8,6 +9,8 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.*;
 
 import javax.security.auth.login.LoginException;
+import java.util.Map;
+
 
 
 @RestController

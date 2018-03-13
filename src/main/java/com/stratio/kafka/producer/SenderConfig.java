@@ -1,8 +1,5 @@
 package com.stratio.kafka.producer;
-
-import com.stratio.dto.Product;
 import com.stratio.kafka.config.KafkaConfig;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Autowired;

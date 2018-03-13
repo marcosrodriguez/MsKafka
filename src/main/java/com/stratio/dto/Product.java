@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 public class Product {
 
     private String topic;
-    private String message;
+    private Object message;
 
 }

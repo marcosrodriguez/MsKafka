@@ -26,3 +26,14 @@ monitoring:
     path: prometheus
 
 spring.application.name: MsKafka
+
+server:
+  port: ${PORT0}
+  ssl:
+    key-store: ${KAFKA_SSL_KEYSTORE_LOCATION}
+    key-store-password: ${KAFKA_SSL_KEYSTORE_PASSWORD}
+    key-alias: 1
+    trust-store: ${KAFKA_SSL_TRUSTSTORE_LOCATION}
+    trust-store-password: ${KAFKA_SSL_TRUSTSTORE_PASSWORD}
+    enabled: true
+    client-auth: need
